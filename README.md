@@ -12,6 +12,7 @@ Backup existing then download the config file
 ```
 sudo cp /etc/pulse/default.pa /etc/pulse/default.pa.backup
 sudo wget -O /etc/pulse/default.pa https://raw.githubusercontent.com/frankpintosr/pulseaudio_eq/master/default.pa
+pulseaudio -k && pulseaudio -D
 ```
 
 Download icon
@@ -24,7 +25,7 @@ Download start menu file
 sudo wget -O /usr/share/applications/paeq.desktop https://raw.githubusercontent.com/frankpintosr/pulseaudio_eq/master/paeq.desktop
 ```
 
-Restart the desktop environment and enjoy!
+Restart and enjoy!
 ```
-sudo lxpanelctl restart
+sudo reboot now
 ```
